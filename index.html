@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webライター月100万円 完全ロードマップ｜超豪華12大特典プレゼント</title>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .lp-wrap {
+    max-width: 480px;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 130px;
+    position: relative;
+  }
+
+  /* ===== GOLD GRADIENT ===== */
+  .gold-grad {
+    background: linear-gradient(90deg, #8B6914 0%, #D4A017 25%, #F5D060 50%, #D4A017 75%, #8B6914 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gold-grad-bg {
+    background: linear-gradient(90deg, #8B6914 0%, #D4A017 25%, #F5D060 50%, #D4A017 75%, #8B6914 100%);
+  }
+  .gold-header-bg {
+    background: linear-gradient(180deg, #5C4A1C 0%, #8B7225 35%, #C4A84A 50%, #8B7225 65%, #5C4A1C 100%);
+  }
+
+  /* ===== CTA ANIMATION ===== */
+  @keyframes cta-pulse {
+    0%   { transform: scale(1);    box-shadow: 0 6px 0 #8b0000, 0 8px 20px rgba(204,0,0,0.45); }
+    50%  { transform: scale(1.03); box-shadow: 0 6px 0 #8b0000, 0 12px 28px rgba(204,0,0,0.6); }
+    100% { transform: scale(1);    box-shadow: 0 6px 0 #8b0000, 0 8px 20px rgba(204,0,0,0.45); }
+  }
+
+  /* ===== COUNTDOWN BAR (fixed) ===== */
+  .countdown-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    background: #fff;
+    padding: 10px 16px 12px;
+    box-shadow: 0 -3px 16px rgba(0,0,0,0.18);
+    z-index: 9999;
+    text-align: center;
+  }
+  .countdown-label-top {
+    font-size: 11px;
+    color: #cc0000;
+    font-weight: bold;
+    margin-bottom: 6px;
+    letter-spacing: 0.05em;
+  }
+  .countdown-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+  }
+  .countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+  .countdown-num {
+    background: #cc0000;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 2px 6px rgba(204,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  .countdown-unit-label {
+    font-size: 11px;
+    color: #555;
+    font-weight: bold;
+  }
+  .countdown-sep {
+    font-size: 26px;
+    font-weight: 900;
+    color: #cc0000;
+    line-height: 54px;
+    margin-bottom: 18px;
+  }
+
+  /* ===== SECTION 1: 緊急性ヘッダー ===== */
+  .badge {
+    background: #fff;
+    color: #cc0000;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 20px 14px;
+    letter-spacing: 0.05em;
+    border-bottom: 3px solid #cc0000;
+  }
+
+  .sec-urgency {
+    background: #1a1a1a;
+    padding: 22px 20px 28px;
+    text-align: center;
+  }
+  .urgency-delete-line {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.9;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  .urgency-delete-line .gold-span {
+    display: inline-block;
+    background: linear-gradient(90deg, #8B6914 0%, #D4A017 25%, #F5D060 50%, #D4A017 75%, #8B6914 100%);
+    color: #fff;
+    font-size: clamp(16px, 4.5vw, 22px);
+    font-weight: 900;
+    padding: 3px 10px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+    -webkit-text-fill-color: #fff;
+  }
+  .urgency-sub {
+    font-size: 13px;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .urgency-note {
+    display: block;
+    background: linear-gradient(90deg, #8B6914 0%, #D4A017 25%, #F5D060 50%, #D4A017 75%, #8B6914 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 9px 16px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -webkit-text-fill-color: #fff;
+  }
+
+  /* ===== SECTION 2: 動画 ===== */
+  .sec-video {
+    background: #fff;
+    padding: 24px 16px 20px;
+  }
+  .video-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  .video-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  /* ===== CTA 共通 ===== */
+  .sec-cta {
+    background: #fff;
+    padding: 24px 20px 20px;
+    text-align: center;
+  }
+  .cta-catch {
+    font-size: 16px;
+    font-weight: 900;
+    color: #cc0000;
+    margin-bottom: 14px;
+    letter-spacing: 0.03em;
+  }
+  .cta-btn {
+    display: block;
+    width: 92%;
+    max-width: 400px;
+    margin: 0 auto 14px;
+    padding: 14px 16px 16px;
+    background: #cc0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #8b0000, 0 8px 20px rgba(204,0,0,0.4);
+    animation: cta-pulse 2s ease-in-out infinite;
+    text-align: center;
+  }
+  .cta-btn .sub-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2px 14px;
+    border: 1.5px solid rgba(255,255,255,0.9);
+    border-radius: 4px;
+    color: #cc0000;
+    background: #fff;
+    -webkit-text-fill-color: #cc0000;
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
+  .cta-btn .main-label {
+    display: block;
+    font-size: clamp(15px, 4.2vw, 20px);
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+  .cta-note-bold {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .cta-note {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* ===== SECTION 4: 特典 ===== */
+  .sec-benefits-hd {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 30px 20px 26px;
+  }
+  .benefits-title-gold {
+    display: inline-block;
+    background: linear-gradient(90deg, #8B6914 0%, #D4A017 25%, #F5D060 50%, #D4A017 75%, #8B6914 100%);
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 8px 22px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+  }
+  .benefits-title-sub {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 6px 0 10px;
+    letter-spacing: 0.03em;
+  }
+  .benefits-subtitle {
+    color: #bbb;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .sec-benefits-img {
+    padding: 0;
+    background: #fff;
+    text-align: center;
+  }
+  .sec-benefits-img img {
+    width: 100%;
+    display: block;
+  }
+
+  /* ===== SECTION 6: ロードマップ内容 ===== */
+  .sec-contents {
+    background: #1a1a1a;
+    padding: 0 0 36px;
+  }
+  .section-hd {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.6;
+    padding: 22px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  }
+  .contents-list {
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin: 0 16px;
+  }
+  .contents-item {
+    display: flex;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    align-items: flex-start;
+  }
+  .contents-item:last-child { border-bottom: none; }
+  .contents-item .num {
+    font-size: 15px;
+    font-weight: 900;
+    color: #cc0000;
+    min-width: 26px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .contents-item .text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* ===== SECTION 7: FAQ ===== */
+  .sec-faq {
+    background: #1a1a1a;
+    padding: 0 0 36px;
+  }
+  .faq-item {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 18px 16px;
+    margin: 0 16px 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .faq-q-block {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .q-label {
+    display: inline-block;
+    background: #F5D060;
+    color: #1a1a1a;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+  }
+  .faq-q {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+  }
+  .faq-a-block {}
+  .a-label {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+  }
+  .faq-a {
+    font-size: 13px;
+    line-height: 1.75;
+    color: #ccc;
+    margin: 0;
+  }
+
+  /* ===== SECTION 9 & 11: 画像系 ===== */
+  .sec-img-full {
+    padding: 0;
+    background: #fff;
+  }
+  .sec-img-full img {
+    width: 100%;
+    display: block;
+  }
+
+  /* ===== 区切り装飾 ===== */
+  .divider-gold {
+    height: 4px;
+    background: linear-gradient(90deg, #8B6914, #F5D060, #8B6914);
+  }
+</style>
+</head>
+<body>
+
+<div class="lp-wrap">
+
+  <!-- SECTION 1: 緊急性ヘッダー -->
+  <div class="badge">！重要！</div>
+  <section class="sec-urgency">
+    <div class="urgency-delete-line">
+      <span>このページは</span>
+      <span class="gold-span">5日後 00時に削除</span>
+      <span>します。</span>
+    </div>
+    <p class="urgency-sub">
+      注意深く文章と動画の内容をご覧ください。<br>
+      非常に重要な内容となっております。
+    </p>
+    <span class="urgency-note">※時間経過後はこのページに一切アクセスができなくなります。</span>
+  </section>
+
+  <!-- SECTION 2: 動画 -->
+  <section class="sec-video">
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/H4_lJ6WmLXQ"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CTA① -->
+  <section class="sec-cta">
+    <p class="cta-catch">＼豪華12大特典がもらえる！／</p>
+    <a href="https://line.me/R/ti/p/%40959veegx" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      <span class="sub-label">Webライター0→100万</span>
+      <span class="main-label">ロードマップ作成会に参加する</span>
+    </a>
+    <p class="cta-note-bold">年に1度開催するかどうかの特別なご案内です</p>
+    <p class="cta-note-bold">公式LINEに「ロードマップ」と送るだけ！</p>
+    <p class="cta-note">※5日間のタイマー経過後はロードマップ作成会への申し込みができなくなります。</p>
+  </section>
+
+  <div class="divider-gold"></div>
+
+  <!-- SECTION 4: 特典一覧 -->
+  <section class="sec-benefits-hd">
+    <div class="benefits-title-gold">超豪華12大特典</div>
+    <p class="benefits-title-sub">をプレゼント！</p>
+    <p class="benefits-subtitle">ロードマップ作成会参加者しか受け取れないシークレット特典となります。</p>
+  </section>
+  <section class="sec-benefits-img">
+    <img src="LP内画像/特典12個.jpg" alt="超豪華12大特典">
+  </section>
+
+  <!-- SECTION 5: CTA② -->
+  <section class="sec-cta">
+    <p class="cta-catch">＼タップして参加！／</p>
+    <a href="https://line.me/R/ti/p/%40959veegx" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      <span class="sub-label">Webライター0→100万</span>
+      <span class="main-label">ロードマップ作成会に参加する</span>
+    </a>
+    <p class="cta-note-bold">年に1度開催するかどうかの特別なご案内です</p>
+    <p class="cta-note-bold">公式LINEに「ロードマップ」と送るだけ！</p>
+    <p class="cta-note">※5日間のタイマー経過後はロードマップ作成会への申し込みができなくなります。</p>
+  </section>
+
+  <div class="divider-gold"></div>
+
+  <!-- SECTION 6: ロードマップ内容 -->
+  <section class="sec-contents">
+    <h2 class="section-hd gold-header-bg">
+      収益0円からの脱出！<br>Webライター月100万円<br>完全ロードマップの内容
+    </h2>
+    <div class="contents-list">
+      <div class="contents-item"><span class="num">01</span><span class="text">私がWebライターで月収152万円を達成した最速ロードマップ</span></div>
+      <div class="contents-item"><span class="num">02</span><span class="text">スキル0から2ヶ月で月収20万円を達成した会社員の方法</span></div>
+      <div class="contents-item"><span class="num">03</span><span class="text">完全未経験の育休中ママさんが初応募で案件を受注した方法</span></div>
+      <div class="contents-item"><span class="num">04</span><span class="text">フリーランスライターが2ヶ月で文字単価2円→6円の案件を獲得できた理由</span></div>
+      <div class="contents-item"><span class="num">05</span><span class="text">なぜあなたが今まで稼げなかったのか 〜あなたに足りないのは○○です〜</span></div>
+      <div class="contents-item"><span class="num">06</span><span class="text">初心者が確実に案件を取れるプラットフォーム</span></div>
+      <div class="contents-item"><span class="num">07</span><span class="text">まずは月3万円！迷わず達成する方法</span></div>
+      <div class="contents-item"><span class="num">08</span><span class="text">最初からAI活用は詰む!? ○○を制するものはマネタイズを制する</span></div>
+      <div class="contents-item"><span class="num">09</span><span class="text">月収100万円達成する人が使っている極秘プラットフォーム</span></div>
+      <div class="contents-item"><span class="num">10</span><span class="text">時間の切り売りから解放！月収100万円を達成する4つの戦略</span></div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: FAQ -->
+  <section class="sec-faq">
+    <h2 class="section-hd gold-header-bg">よくあるご質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q-block">
+        <span class="q-label">Q</span>
+        <p class="faq-q">ロードマップ作成会はどうやって参加すればいいですか？</p>
+      </div>
+      <div class="faq-a-block">
+        <span class="a-label">A</span>
+        <p class="faq-a">ロードマップ作成会はオンライン開催で「Google Meet」を活用します。Google Meetでの参加方法については開催前日にLINEでお伝えしますのでご安心ください。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q-block">
+        <span class="q-label">Q</span>
+        <p class="faq-q">ロードマップ作成会のアーカイブ動画はもらえますか？</p>
+      </div>
+      <div class="faq-a-block">
+        <span class="a-label">A</span>
+        <p class="faq-a">こちらは特別な作成会なので、アーカイブ及び録画の提供は行えない形となります。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q-block">
+        <span class="q-label">Q</span>
+        <p class="faq-q">プレミアム動画特典はいつまで見れますか？</p>
+      </div>
+      <div class="faq-a-block">
+        <span class="a-label">A</span>
+        <p class="faq-a">プレミアム動画に関しては5日間限定公開となります。それ以降はノウハウの価値を守るためにも再配信はいたしません。お早めにご視聴ください。必ず期間内に視聴してください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CTA③ -->
+  <section class="sec-cta">
+    <p class="cta-catch">＼豪華12大特典がもらえる！／</p>
+    <a href="https://line.me/R/ti/p/%40959veegx" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      <span class="sub-label">Webライター0→100万</span>
+      <span class="main-label">ロードマップ作成会に参加する</span>
+    </a>
+    <p class="cta-note-bold">年に1度開催するかどうかの特別なご案内です</p>
+    <p class="cta-note-bold">公式LINEに「ロードマップ」と送るだけ！</p>
+    <p class="cta-note">※5日間のタイマー経過後はロードマップ作成会への申し込みができなくなります。</p>
+  </section>
+
+  <div class="divider-gold"></div>
+
+  <!-- SECTION 9: コンサル実績 -->
+  <section class="sec-img-full">
+    <img src="LP内画像/生徒実績.jpg" alt="コンサル生の実績">
+  </section>
+
+  <!-- SECTION 10: CTA④ -->
+  <section class="sec-cta">
+    <p class="cta-catch">＼豪華12大特典がもらえる！／</p>
+    <a href="https://line.me/R/ti/p/%40959veegx" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      <span class="sub-label">Webライター0→100万</span>
+      <span class="main-label">ロードマップ作成会に参加する</span>
+    </a>
+    <p class="cta-note-bold">年に1度開催するかどうかの特別なご案内です</p>
+    <p class="cta-note-bold">公式LINEに「ロードマップ」と送るだけ！</p>
+    <p class="cta-note">※5日間のタイマー経過後はロードマップ作成会への申し込みができなくなります。</p>
+  </section>
+
+  <div class="divider-gold"></div>
+
+  <!-- SECTION 11: 参加者の声 -->
+  <section class="sec-img-full">
+    <img src="LP内画像/感想.jpg" alt="参加者の声">
+  </section>
+
+  <!-- SECTION 12: 最終CTA -->
+  <section class="sec-cta">
+    <p class="cta-catch">＼豪華12大特典がもらえる！／</p>
+    <a href="https://line.me/R/ti/p/%40959veegx" class="cta-btn" target="_blank" rel="noopener noreferrer">
+      <span class="sub-label">Webライター0→100万</span>
+      <span class="main-label">ロードマップ作成会に参加する</span>
+    </a>
+    <p class="cta-note-bold">年に1度開催するかどうかの特別なご案内です</p>
+    <p class="cta-note-bold">公式LINEに「ロードマップ」と送るだけ！</p>
+    <p class="cta-note">※5日間のタイマー経過後はロードマップ作成会への申し込みができなくなります。</p>
+  </section>
+
+</div><!-- /.lp-wrap -->
+
+<!-- カウントダウンタイマー（固定） -->
+<div class="countdown-bar">
+  <div class="countdown-label-top">▼ このページの削除まで残り ▼</div>
+  <div class="countdown-inner">
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-days">00</div>
+      <span class="countdown-unit-label">日</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-hours">00</div>
+      <span class="countdown-unit-label">時間</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-mins">00</div>
+      <span class="countdown-unit-label">分</span>
+    </div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-secs">00</div>
+      <span class="countdown-unit-label">秒</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var key = 'lp_countdown_end';
+  var stored = localStorage.getItem(key);
+  var end;
+  if (stored) {
+    end = parseInt(stored, 10);
+  } else {
+    end = Date.now() + 5 * 24 * 60 * 60 * 1000;
+    localStorage.setItem(key, end);
+  }
+  function update() {
+    var diff = end - Date.now();
+    if (diff < 0) diff = 0;
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent  = String(d).padStart(2, '0');
+    document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+    document.getElementById('cd-mins').textContent  = String(m).padStart(2, '0');
+    document.getElementById('cd-secs').textContent  = String(s).padStart(2, '0');
+    requestAnimationFrame(update);
+  }
+  update();
+  setInterval(update, 1000);
+})();
+</script>
+
+</body>
+</html>
